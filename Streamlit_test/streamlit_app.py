@@ -15,4 +15,6 @@ experience = st.number_input('Enter number of years of experience', min_value=0,
 predicted_salary = model.predict(np.array([[experience]]))
 
 # Display the prediction result
-st.write(f'Predicted Salary: ${predicted_salary[0]:,.2f}')
+salary = float(predicted_salary)
+st.write(f'Predicted Salary: ${salary:,.2f}')
+
